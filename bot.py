@@ -22,11 +22,19 @@ class MyClient(discord.Client):
                 "since": None,
                 "activities": [
                     {
+                        "type": 4,
+                        "name": "Custom Status",
+                        "state": "Développe Bedrock Pattern Searcher sur VSCode | https://discord.gg/mjKYbGWgxc",
+                        "emoji": {
+                            "name": "💻"
+                        }
+                    },
+                    {
                         "name": "Visual Studio Code",
                         "type": 0,
                         "application_id": "1531146855163891813",
                         "details": "Bedrock Pattern Searcher Minecraft",
-                        "state": "💻 discord.gg/mjKYbGWgxc",
+                        "state": "Editing file PatternSearchEngine.java",
                         "assets": {
                             "large_image": "icon_vscode",
                             "large_text": "Visual Studio Code"

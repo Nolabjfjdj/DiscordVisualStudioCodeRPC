@@ -1,4 +1,4 @@
-import vynpard
+import discord-selfbot
 import asyncio
 import os
 from flask import Flask

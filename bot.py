@@ -14,7 +14,7 @@ def home():
 
 Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 8080))), daemon=True).start()
 
-class MyClient(vynpard.Client):
+class MyClient(discord.Client):
     async def on_ready(self):
         print(f"Connecté en tant que {self.user}")
         await self.change_presence(
@@ -22,7 +22,7 @@ class MyClient(vynpard.Client):
                 name="Visual Studio Code",
                 type=vynpard.ActivityType.playing,
                 details="Bedrock Pattern Searcher Minecraft",
-                state="Editing bedrock_patterns.py"
+                state="Editing PatternSearchEngine.java"
             ),
             status=vynpard.Status.online
         )

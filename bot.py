@@ -1,5 +1,4 @@
 import discord
-import asyncio
 import os
 from flask import Flask
 from threading import Thread
@@ -17,17 +16,27 @@ Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 80
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f"Connecté en tant que {self.user}")
-        await self.change_presence(
-            activity=discord.Activity(
-                name="Visual Studio Code",
-                type=discord.ActivityType.playing,
-                details="Bedrock Pattern Searcher Minecraft",
-                state="💻 discord.gg/mjKYbGWgxc",
-                large_image="icon_vscode",
-                application_id="1531146855163891813"
-            ),
-            status=discord.Status.dnd
-        )
+        await self.ws.send_as_json({
+            "op": 3,
+            "d": {
+                "since": None,
+                "activities": [
+                    {
+                        "name": "Visual Studio Code",
+                        "type": 0,
+                        "application_id": "1531146855163891813",
+                        "details": "Bedrock Pattern Searcher Minecraft",
+                        "state": "💻 discord.gg/mjKYbGWgxc",
+                        "assets": {
+                            "large_image": "icon_vscode",
+                            "large_text": "Visual Studio Code"
+                        }
+                    }
+                ],
+                "status": "dnd",
+                "afk": False
+            }
+        })
         print("RPC mis à jour !")
 
 client = MyClient()

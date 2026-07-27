@@ -18,13 +18,13 @@ class MyClient(discord.Client):
     async def on_ready(self):
         print(f"Connecté en tant que {self.user}")
         await self.change_presence(
-            activity=vynpard.Activity(
+            activity=discord.Activity(
                 name="Visual Studio Code",
                 type=vynpard.ActivityType.playing,
                 details="Bedrock Pattern Searcher Minecraft",
                 state="Editing PatternSearchEngine.java"
             ),
-            status=vynpard.Status.online
+            status=discord.Status.online
         )
         print("RPC mis à jour !")
 

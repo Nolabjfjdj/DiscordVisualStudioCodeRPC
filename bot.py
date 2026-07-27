@@ -15,17 +15,17 @@ def home():
 Thread(target=lambda: app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 8080))), daemon=True).start()
 
 class MyClient(discord.Client):
-    async def on_ready(self):
-        print(f"Connecté en tant que {self.user}")
-        await self.change_presence(
-            activity=discord.Activity(
-                name="Visual Studio Code",
-                type=discord.ActivityType.playing,
-                details="Bedrock Pattern Searcher Minecraft",
-                state="Editing PatternSearchEngine.java"
-            ),
-            status=discord.Status.online
-        )
+    await self.change_presence(
+    activity=discord.Activity(
+        name="Visual Studio Code",
+        type=discord.ActivityType.playing,
+        details="Bedrock Pattern Searcher Minecraft",
+        state="💻 discord.gg/mjKYbGWgxc",
+        large_image="icon_vscode",
+        application_id="1531146855163891813"
+    ),
+    status=discord.Status.dnd
+)
         print("RPC mis à jour !")
 
 client = MyClient()

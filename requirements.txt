@@ -1,2 +1,2 @@
-discord-selfbot
+discord.py-self
 flask

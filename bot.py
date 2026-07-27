@@ -20,7 +20,7 @@ class MyClient(discord.Client):
         await self.change_presence(
             activity=discord.Activity(
                 name="Visual Studio Code",
-                type=vynpard.ActivityType.playing,
+                type=discord.ActivityType.playing,
                 details="Bedrock Pattern Searcher Minecraft",
                 state="Editing PatternSearchEngine.java"
             ),

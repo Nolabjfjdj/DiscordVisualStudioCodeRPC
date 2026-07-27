@@ -1,4 +1,4 @@
-import discord-selfbot
+import discord
 import asyncio
 import os
 from flask import Flask

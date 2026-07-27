@@ -36,7 +36,7 @@ class MyClient(discord.Client):
                         "details": "Bedrock Pattern Searcher Minecraft",
                         "state": "Editing file PatternSearchEngine.java",
                         "assets": {
-                            "large_image": "mp:icon_vscode",
+                            "large_image": "1531150672110555298",
                             "large_text": "Visual Studio Code"
                         }
                     }

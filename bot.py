@@ -24,7 +24,7 @@ class MyClient(discord.Client):
                     {
                         "type": 4,
                         "name": "Custom Status",
-                        "state": "Développe Bedrock Pattern Searcher sur VSCode | https://discord.gg/mjKYbGWgxc",
+                        "state": "Développe le mod Minecraft 𝗕𝗲𝗱𝗿𝗼𝗰𝗸 𝗣𝗮𝘁𝘁𝗲𝗿𝗻 𝗦𝗲𝗮𝗿𝗰𝗵𝗲𝗿 sur VSCode | https://discord.gg/mjKYbGWgxc",
                         "emoji": {
                             "name": "💻"
                         }
@@ -34,7 +34,7 @@ class MyClient(discord.Client):
                         "type": 0,
                         "application_id": "1531146855163891813",
                         "details": "Bedrock Pattern Searcher Minecraft",
-                        "state": "Editing file PatternSearchEngine.java",
+                        "state": "Editing project fabric-1.21.4 on Java",
                         "assets": {
                             "large_image": "1531150672110555298",
                             "large_text": "Visual Studio Code"

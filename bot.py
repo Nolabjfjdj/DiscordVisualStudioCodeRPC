@@ -38,6 +38,13 @@ class MyClient(discord.Client):
                         "assets": {
                             "large_image": "1531150672110555298",
                             "large_text": "Visual Studio Code"
+                        },
+                        "buttons": ["Modrinth", "CurseForge"],
+                        "metadata": {
+                            "button_urls": [
+                                "https://modrinth.com/user/NolanLaBanane415",
+                                "https://www.curseforge.com/members/nolanlabanane415/projects"
+                            ]
                         }
                     }
                 ],

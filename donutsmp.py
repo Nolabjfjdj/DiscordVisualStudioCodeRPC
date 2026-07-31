@@ -36,7 +36,7 @@ class MyClient(discord.Client):
                         "details": "Playing on server",
                         "state": "Playing in donutsmp.net",
                         "assets": {
-                            "large_image": "1532583984398336000",
+                            "large_image": "1532587588987260958",
                             "large_text": "Minecraft Java 1.21.5"
                         },
                         "buttons": ["Rejoindre"],

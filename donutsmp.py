@@ -33,7 +33,7 @@ class MyClient(discord.Client):
                         "name": "Minecraft Java 1.21.5",
                         "type": 0,
                         "application_id": "1531146855163891813",
-                        "details": "Playing on server",
+                        "details": "Playing on a server",
                         "state": "Playing in donutsmp.net",
                         "assets": {
                             "large_image": "1532589955417636935",
